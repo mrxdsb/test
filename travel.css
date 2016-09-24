@@ -1,0 +1,58 @@
+body
+{					/*默认适配 5s默认分辨率为980*/
+padding:1px;				/*四周内边距1个像素*/
+padding-left:1px;			/*左边框边距1个像素*/
+padding-right:1px;
+margin-lift:10px;			/*外边框*/
+}
+.article 
+{
+background-image:url(../img/travelbackground.jpg);/*边框样式*/
+border-color:black;
+
+border-width:1px;
+
+border-style:solid;
+padding:2px;
+padding-left:2;
+text-align:center;			/*文本居中对图像等所有内联元素起作用*/
+}
+@media screen and (min-width:981px)/*适配浏览器窗口当前分辨率大于981的设备*/
+{
+body{
+padding:2px;
+padding-left:5%;
+padding-right:2px;
+}
+.article {
+background-image:url(../img/travelbackground.jpg);
+border-color:black;
+
+border-width:1px;
+
+border-style:solid;
+padding:2px;
+padding-left:5%;
+text-align:center;
+}
+}
+@media screen and (min-width:1441px)/*适配浏览器窗口当前分辨率大于1441的设备*/
+{
+body{
+padding:25px;
+padding-left:20%;
+padding-right:20%;
+}
+.article {
+background-image:url(../img/travelbackground.jpg);
+border-color:black;
+
+border-width:1px;
+
+border-style:solid;
+padding:25px;
+padding-left:5%;
+text-align:center;/*文本居中*/
+margin-lift:10px;
+}
+}
